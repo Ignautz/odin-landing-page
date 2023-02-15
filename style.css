@@ -1,3 +1,168 @@
 :root {
     --roboto: 'Roboto', sans-serif;
 }
+
+
+/*  Classes and uses
+    - logo: contains the logo for the left side of the nav. 
+    - banner: first section directly under the nav. Contains the hero elements
+    - banner-card: container to set up a two-column display for the banner. 
+    - info-section: next section of the page, has some info cards. 
+    - quote: follows the info section. stores the author quote
+    - byline: used to style and align the quote source
+    - signup: last section of the page before the footer
+    - container: style container to store the center content of 'signup'
+*/
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+header,
+h1,
+ul, 
+.banner {
+    background-color: hsl(215, 28%, 17%);
+    color: hsl(90, 17%, 98%);
+    margin: 0;
+}
+
+.info-card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.info-card img {
+    width: 125px;
+    height: 125px;
+    border: 3px solid hsl(217, 91%, 59%);
+    border-radius: 20px;
+}
+
+.info-card {
+    width: 200px;
+    padding: 20px;
+}
+
+.banner-card img {
+    width: 450px;
+    height: 150px;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.info-card span {
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-family: var(--roboto);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    font-size: 18px;
+    color: hsl(220, 13%, 91%);
+    text-decoration: none;
+    padding: 20px;
+}
+
+.logo {
+    color: hsl(90, 17%, 98%);
+    font-size: 24px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.banner-card {
+    padding-left: 40px;
+}
+
+.banner-card a {
+    color:hsl(220, 13%, 91%);
+    background-color: hsl(217, 91%, 59%);
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.quote {
+    background-color: hsl(220, 13%, 91%);
+    color: hsl(215, 28%, 17%);
+    padding: 50px 100px;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.byline {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.signup {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    color:hsl(220, 13%, 91%);
+    background-color: hsl(217, 91%, 59%);
+    display: flex;
+    border-radius: 8px;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container > * {
+    padding: 5px 30px;
+}
+
+.container a {
+    color:hsl(220, 13%, 91%);
+    background-color: hsl(217, 91%, 59%);
+    border: 3px solid hsl(220, 13%, 91%);
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 8px;
+    min-width: 75px;
+}
+
+.container span {
+    flex-shrink: 0;
+    min-width: 75px;
+}
+
+.container strong {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: hsl(215, 28%, 17%);
+    color: hsl(90, 17%, 98%);
+    text-align: center;
+}
